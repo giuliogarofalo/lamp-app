@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useRoomContext } from "./RoomContext";
+import { useRoomContext } from "../context/useRoomContext";
 
 const NavBar = () => {
 

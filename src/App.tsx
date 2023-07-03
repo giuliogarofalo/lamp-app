@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Room from './Room';
-import NavBar from './NavBar';
-import { RoomProvider } from './RoomContext';
+import Room from './components/Room';
+import NavBar from './components/NavBar';
+import { RoomProvider } from './context/RoomContext';
 import { FC } from 'react';
 
-const rooms = Array.from({ length: 10 }, (_, index) => index + 1);
+const rooms = Array.from({ length: 10 }, (_, index) => index);
 
 const App: FC = () => {
   return (
@@ -17,7 +17,7 @@ const App: FC = () => {
         <div className="grid grid-cols-1 gap-3 w-1/2 mx-auto h-1/2">
           <Routes>
             {rooms.map(room => (
-                <Route key={room} path={`/room-${room}`} element={<Room roomNumber={room} />} />
+                <Route key={room} path={`/room-${room+1}`} element={<Room roomNumber={room} />} />
             ))}
           </Routes>
         </div>
