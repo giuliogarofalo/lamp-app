@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { useRoomContext } from '../context/useRoomContext';
-import type { Color } from '../const';
+import type { Color } from '../consts';
 import Lamp from './Lamp';
 
 interface RoomProps {
