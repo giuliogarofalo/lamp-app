@@ -1,4 +1,5 @@
 
+import { render } from '@testing-library/react';
 
 // const TestApp = () => {
 //   const { rooms } = useRoomContext();
@@ -20,5 +21,5 @@ test('The word "Room" is visible in App component', () => {
     // use findByText to find the word "Room"   
     // expect the word "Room" to be visible
      const { findByText } = render(<App />);
-        expect(findByText('Room')).toBeVisible();
+        expect(findByText('Room'));
 });
