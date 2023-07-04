@@ -11,7 +11,7 @@ export const useRoomContext = () => {
   const context = useContext(RoomsContext);
 
   if (!context) {
-    throw new Error('useLampContext must be used within a LampProvider');
+    throw new Error('useRoomContext must be used within a RoomProvider');
   }
 
   return context;
