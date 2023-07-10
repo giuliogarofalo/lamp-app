@@ -1,5 +1,5 @@
 import { createContext, useState, FC, ReactNode } from 'react';
-import { RoomsContextProps, RoomState } from '../consts';
+import { RoomsContextProps, RoomState } from '../const';
 
 const RoomsContext = createContext<RoomsContextProps | undefined>(undefined);
 

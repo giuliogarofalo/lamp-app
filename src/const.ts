@@ -4,6 +4,7 @@ import { Dispatch, SetStateAction } from "react";
 export type Color = 'red' | 'green' | 'blue' | 'yellow' | undefined;
 
 export interface RoomState {
+  // Lamps can change their states between `on` and `off`
   isLampOn: boolean;
   lampColor: Color;
 }

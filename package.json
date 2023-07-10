@@ -11,8 +11,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "test": "jest --passWithNoTests"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@babel/preset-react": "^7.22.5",
