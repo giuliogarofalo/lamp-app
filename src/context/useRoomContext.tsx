@@ -4,6 +4,7 @@ import RoomsContext from './RoomContext';
 const roomsMap = new Map();
 
 [...Array(10)].forEach((_, index) => {
+   // The initial status of the lamps is off
   roomsMap.set(index, { isLampOn: false, lampColor: undefined });
 });
 
